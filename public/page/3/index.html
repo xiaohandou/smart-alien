@@ -1,0 +1,283 @@
+<!DOCTYPE html><html lang="zh-CN" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width,initial-scale=1"><title>汪小白</title><meta name="description"><meta name="author" content="汪小白"><meta name="copyright" content="汪小白"><meta name="format-detection" content="telephone=no"><link rel="shortcut icon" href="/img/title.png"><link rel="canonical" href="http://www.sirxs.cn/page/3/"><meta http-equiv="Cache-Control" content="no-transform"><meta http-equiv="Cache-Control" content="no-siteapp"><link rel="preconnect" href="//cdn.jsdelivr.net"/><link rel="preconnect" href="//fonts.googleapis.com" crossorigin="crossorigin"/><link rel="preconnect" href="//busuanzi.ibruce.info"/><meta property="og:type" content="website"><meta property="og:title" content="汪小白"><meta property="og:url" content="http://www.sirxs.cn/page/3/"><meta property="og:site_name" content="汪小白"><meta property="og:description"><meta property="og:image" content="http://www.sirxs.cn/img/avatar.png"><meta property="article:published_time" content="2021-06-21T09:40:44.344Z"><meta property="article:modified_time" content="2021-06-21T09:40:44.344Z"><meta name="twitter:card" content="summary"><script>var activateDarkMode = function () {
+  document.documentElement.setAttribute('data-theme', 'dark')
+  if (document.querySelector('meta[name="theme-color"]') !== null) {
+    document.querySelector('meta[name="theme-color"]').setAttribute('content', '#000')
+  }
+}
+var activateLightMode = function () {
+  document.documentElement.setAttribute('data-theme', 'light')
+  if (document.querySelector('meta[name="theme-color"]') !== null) {
+    document.querySelector('meta[name="theme-color"]').setAttribute('content', '#fff')
+  }
+}
+
+var getCookies = function (name) {
+  const value = `; ${document.cookie}`
+  const parts = value.split(`; ${name}=`)
+  if (parts.length === 2) return parts.pop().split(';').shift()
+}
+
+var autoChangeMode = 'false'
+var t = getCookies('theme')
+if (autoChangeMode === '1') {
+  var isDarkMode = window.matchMedia('(prefers-color-scheme: dark)').matches
+  var isLightMode = window.matchMedia('(prefers-color-scheme: light)').matches
+  var isNotSpecified = window.matchMedia('(prefers-color-scheme: no-preference)').matches
+  var hasNoSupport = !isDarkMode && !isLightMode && !isNotSpecified
+
+  if (t === undefined) {
+    if (isLightMode) activateLightMode()
+    else if (isDarkMode) activateDarkMode()
+    else if (isNotSpecified || hasNoSupport) {
+      console.log('You specified no preference for a color scheme or your browser does not support it. I Schedule dark mode during night time.')
+      var now = new Date()
+      var hour = now.getHours()
+      var isNight = hour <= 6 || hour >= 18
+      isNight ? activateDarkMode() : activateLightMode()
+    }
+    window.matchMedia('(prefers-color-scheme: dark)').addListener(function (e) {
+      if (Cookies.get('theme') === undefined) {
+        e.matches ? activateDarkMode() : activateLightMode()
+      }
+    })
+  } else if (t === 'light') activateLightMode()
+  else activateDarkMode()
+} else if (autoChangeMode === '2') {
+  now = new Date()
+  hour = now.getHours()
+  isNight = hour <= 6 || hour >= 18
+  if (t === undefined) isNight ? activateDarkMode() : activateLightMode()
+  else if (t === 'light') activateLightMode()
+  else activateDarkMode()
+} else {
+  if (t === 'dark') activateDarkMode()
+  else if (t === 'light') activateLightMode()
+}</script><link rel="stylesheet" href="/css/index.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free/css/all.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@latest/dist/jquery.fancybox.min.css"><link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Titillium+Web&amp;display=swap"><script>var GLOBAL_CONFIG = { 
+  root: '/',
+  algolia: undefined,
+  localSearch: {"path":"search.xml","languages":{"hits_empty":"找不到您查询的内容:${query}"}},
+  translate: {"defaultEncoding":1,"translateDelay":0,"msgToTraditionalChinese":"繁","msgToSimplifiedChinese":"简"},
+  copy: {
+    success: '复制成功',
+    error: '复制错误',
+    noSupport: '浏览器不支持'
+  },
+  bookmark: {
+    message_prev: '按',
+    message_next: '键将本页加入书签'
+  },
+  runtime_unit: '天',
+  runtime: true,
+  copyright: {"languages":{"author":"作者: 汪小白","link":"链接: ","source":"来源: 汪小白","info":"著作权归作者所有。商业转载请联系作者获得授权，非商业转载请注明出处。"}},
+  ClickShowText: {"text":"I,LOVE,YOU,富强,民主,文明,和谐,自由,平等,公正,法治,爱国,敬业,诚信,友善","fontSize":"15px"},
+  medium_zoom: true,
+  fancybox: true,
+  Snackbar: undefined,
+  justifiedGallery: {
+    js: 'https://cdn.jsdelivr.net/npm/justifiedGallery/dist/js/jquery.justifiedGallery.min.js',
+    css: 'https://cdn.jsdelivr.net/npm/justifiedGallery/dist/css/justifiedGallery.min.css'
+  },
+  baiduPush: false,
+  highlightCopy: true,
+  highlightLang: true,
+  isPhotoFigcaption: false,
+  islazyload: true,
+  isanchor: false    
+}</script><script>var GLOBAL_CONFIG_SITE = { 
+  isPost: false,
+  isHome: true,
+  isHighlightShrink: false,
+  isSidebar: false
+  }</script><noscript><style>
+#nav {
+  opacity: 1
+}
+.justified-gallery img{
+  opacity: 1
+}
+</style></noscript><link rel="stylesheet" href="/css/background.css"></head><body><div id="mobile-sidebar"><div id="menu_mask"></div><div id="mobile-sidebar-menus"><div class="mobile_author_icon"><img class="avatar-img" src="/img/avatar.png" onerror="onerror=null;src='/img/friend_404.gif'" alt="avatar"/></div><div class="mobile_post_data"><div class="mobile_data_item is-center"><div class="mobile_data_link"><a href="/archives/"><div class="headline">文章</div><div class="length_num">75</div></a></div></div><div class="mobile_data_item is-center">      <div class="mobile_data_link"><a href="/tags/"><div class="headline">标签</div><div class="length_num">20</div></a></div></div><div class="mobile_data_item is-center">     <div class="mobile_data_link"><a href="/categories/"><div class="headline">分类</div><div class="length_num">4</div></a></div></div></div><hr/><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fa fa-home"></i><span> 主页</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fa fa-archive"></i><span> 时间轴</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fa fa-tags"></i><span> 标签</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fa fa-folder-open"></i><span> 分类</span></a></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fa fa-link"></i><span> 友链</span></a></div><div class="menus_item"><a class="site-page" href="/board/"><i class="fa-fw fa fa-comment"></i><span> 留言板</span></a></div><div class="menus_item"><a class="site-page" href="/resume/"><i class="fa-fw fa fa-address-book"></i><span> 简历</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fa fa-heart"></i><span> 关于</span></a></div><div class="menus_item"><a class="site-page"><i class="fa-fw fa fa-list"></i><span> 清单</span><i class="fas fa-chevron-down menus-expand"></i></a><ul class="menus_item_child"><li><a class="site-page" href="/movies/"><i class="fa-fw fa fa-film"></i><span> 电影</span></a></li><li><a class="site-page" href="/music/"><i class="fa-fw fa fa-music"></i><span> 音乐</span></a></li><li><a class="site-page" href="/photos/"><i class="fa-fw fa fa-camera"></i><span> 照片</span></a></li></ul></div></div></div></div><div id="body-wrap"><div id="web_bg" data-type="photo"></div><header class="full_page" id="page-header" style="background-image: url(https://cdn.jsdelivr.net/gh/jerryc127/CDN/Photo/index.jpg)"><nav id="nav"><span class="pull-left" id="blog_name"><a class="blog_title" id="site-name" href="/">汪小白</a></span><span class="pull-right menus"><div id="search_button"><a class="site-page social-icon search"><i class="fas fa-search fa-fw"></i><span> 搜索</span></a></div><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fa fa-home"></i><span> 主页</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fa fa-archive"></i><span> 时间轴</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fa fa-tags"></i><span> 标签</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fa fa-folder-open"></i><span> 分类</span></a></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fa fa-link"></i><span> 友链</span></a></div><div class="menus_item"><a class="site-page" href="/board/"><i class="fa-fw fa fa-comment"></i><span> 留言板</span></a></div><div class="menus_item"><a class="site-page" href="/resume/"><i class="fa-fw fa fa-address-book"></i><span> 简历</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fa fa-heart"></i><span> 关于</span></a></div><div class="menus_item"><a class="site-page"><i class="fa-fw fa fa-list"></i><span> 清单</span><i class="fas fa-chevron-down menus-expand"></i></a><ul class="menus_item_child"><li><a class="site-page" href="/movies/"><i class="fa-fw fa fa-film"></i><span> 电影</span></a></li><li><a class="site-page" href="/music/"><i class="fa-fw fa fa-music"></i><span> 音乐</span></a></li><li><a class="site-page" href="/photos/"><i class="fa-fw fa fa-camera"></i><span> 照片</span></a></li></ul></div></div><span class="toggle-menu close"><a class="site-page"><i class="fas fa-bars fa-fw"></i></a></span></span></nav><div id="site-info"><h1 id="site_title">汪小白</h1><div id="site_subtitle"><span id="subtitle"></span></div><div id="site_social_icons"><a class="social-icon" href="https://github.com/wxs0088" target="_blank" title="Github"><i class="fab fa-github"></i></a><a class="social-icon" href="mailto:13934880929@outlook.com" target="_blank" title="Email"><i class="fa fa-envelope"></i></a><a class="social-icon" href="/atom.xml" target="_blank" title="RSS"><i class="fa fa-rss"></i></a></div></div><div id="scroll_down"><i class="fas fa-angle-down scroll-down-effects"></i></div></header><main class="layout_page" id="content-inner"><div class="recent-posts" id="recent-posts"><div class="recent-post-item"><div class="post_cover left_radius"><a href="/2020/06/08/Note/reids%E6%8C%81%E4%B9%85%E5%8C%96/" title="Redis持久化">     <img class="post_bg" data-src="/img/notepic.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="Redis持久化"></a></div><div class="recent-post-info"><a class="article-title" href="/2020/06/08/Note/reids%E6%8C%81%E4%B9%85%E5%8C%96/" title="Redis持久化">Redis持久化</a><div class="article-meta-wrap"><time class="post-meta__date"><span class="post-meta__date-created" title="发表于 2020-06-08 08:00:00"><i class="far fa-calendar-alt"></i>2020-06-08</span><span class="article-meta__separator">|</span><span class="post-meta__date-updated" title="更新于 2020-06-08 15:39:29"><i class="fas fa-history"></i>2020-06-08</span></time><span class="article-meta"><span class="article-meta__separator">|</span><i class="fas fa-inbox article-meta__icon"></i><a class="article-meta__categories" href="/categories/%E6%80%BB%E7%BB%93-%C2%B7-%E7%AC%94%E8%AE%B0/">总结 · 笔记</a></span></div><div class="content">知识是珍贵宝石的结晶,文化是宝石放出的光泽。——泰戈尔
+
+RDB持久化开启方式在Redis安装目录下找到redis.windows.conf这个文件，并打开
+
+下图就是RDB开启方式
+
+RDB持久化是把当前进程数据生成快照保存到硬盘的过程，触发RDB持久化过程分为手动触发和自动触发
+1）触发机制手动触发分别对应save和bgsave命令
+save命令：阻塞当前Redis服务器，直到RDB过程完成为止，对于内存 比较大的实例会造成长时间阻塞，线上环境不建议使用
+bgsave命令：Redis进程执行fork操作创建子进程，RDB持久化过程由子 进程负责，完成后自动结束。阻塞只发生在fork阶段，一般时间很短
+2）自动触发RDB的持久使用save相关配置，如“save m n”。表示m秒内数据集存在n次修改 时，自动触发bgsave。
+如果从节点执行全量复制操作，主节点自动执行bgsave生成RDB文件并发送给从节点，更多细节见6.3节介绍的复制原理。
+执行debug reload命令重新加载Redis时，也会自动触发save操作。
+默认情况下执行shutdown命令时，如果没有开启AOF持 ...</div></div></div><div class="recent-post-item"><div class="post_cover right_radius"><a href="/2020/06/08/Blog/qiniu/" title="（七牛云云端存储）使用python3.7+Vue.js2.0+Django2.0.4异步前端通过api上传文件到七牛云云端存储">     <img class="post_bg" data-src="/img/timg.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="（七牛云云端存储）使用python3.7+Vue.js2.0+Django2.0.4异步前端通过api上传文件到七牛云云端存储"></a></div><div class="recent-post-info"><a class="article-title" href="/2020/06/08/Blog/qiniu/" title="（七牛云云端存储）使用python3.7+Vue.js2.0+Django2.0.4异步前端通过api上传文件到七牛云云端存储">（七牛云云端存储）使用python3.7+Vue.js2.0+Django2.0.4异步前端通过api上传文件到七牛云云端存储</a><div class="article-meta-wrap"><time class="post-meta__date"><span class="post-meta__date-created" title="发表于 2020-06-08 08:00:00"><i class="far fa-calendar-alt"></i>2020-06-08</span><span class="article-meta__separator">|</span><span class="post-meta__date-updated" title="更新于 2020-06-13 21:01:22"><i class="fas fa-history"></i>2020-06-13</span></time><span class="article-meta"><span class="article-meta__separator">|</span><i class="fas fa-inbox article-meta__icon"></i><a class="article-meta__categories" href="/categories/%E7%BC%96%E7%A8%8B-%C2%B7-%E6%8A%80%E6%9C%AF/">编程 · 技术</a></span></div><div class="content">序幕云存储的使用范围当下是非常的广泛了。如：某宝，某东这些大型的网上购物平台，许多的商品图片以及视频都开始了云存储。
+那什么是云存储呢
+云存储是一种网上在线存储（英语：Cloud storage）的模式，即把数据存放在通常由第三方托管的多台虚拟服务器，而非专属的服务器上。
+云存储是在云计算(cloud computing)概念上延伸和衍生发展出来的一个新的概念。
+比如：七牛云，又拍云….这些云存储服务器
+接下来我们来实现七牛云云存储
+七牛云配置服务器
+首先进入七牛云官网：https://www.qiniu.com/，进行注册登陆
+
+
+登陆成功后，进入管理控制台，找到对象存储，并进入
+
+
+进入之后创建一个空间
+
+注：这里值得说一下的是这个区域存储，分为5大区域，选择也是根据自己所在的地区选择。下图是不同区域的上传域名
+
+
+创建成功之后在个人头像处找到密钥管理，这里的AK,SK需保存
+
+
+
+
+安装库使用七牛云还需要安装一个库
+1pip install qiniu
+
+
+Django(调用接口获取七牛云token)1234567891011# 定义七牛云存储接口from qiniu impor ...</div></div></div><div class="recent-post-item"><div class="post_cover left_radius"><a href="/2020/06/04/Note/MongoDB/" title="MongoDB与相关命令">     <img class="post_bg" data-src="/img/notepic.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="MongoDB与相关命令"></a></div><div class="recent-post-info"><a class="article-title" href="/2020/06/04/Note/MongoDB/" title="MongoDB与相关命令">MongoDB与相关命令</a><div class="article-meta-wrap"><time class="post-meta__date"><span class="post-meta__date-created" title="发表于 2020-06-04 16:59:18"><i class="far fa-calendar-alt"></i>2020-06-04</span><span class="article-meta__separator">|</span><span class="post-meta__date-updated" title="更新于 2020-06-08 20:11:36"><i class="fas fa-history"></i>2020-06-08</span></time><span class="article-meta"><span class="article-meta__separator">|</span><i class="fas fa-inbox article-meta__icon"></i><a class="article-meta__categories" href="/categories/%E6%80%BB%E7%BB%93-%C2%B7-%E7%AC%94%E8%AE%B0/">总结 · 笔记</a></span></div><div class="content">序幕MongoDB（来自于英文单词“Humongous”，中文含义为“庞大”）是可以应用于各种规模的企业、各个行业以及各类应用程序的开源数据库。作为一个适用于敏捷开发的数据库，MongoDB的数据模式可以随着应用程序的发展而灵活地更新。与此同时，它也为开发人员 提供了传统数据库的功能：二级索引，完整的查询系统以及严格一致性等等。 MongoDB能够使企业更加具有敏捷性和可扩展性，各种规模的企业都可以通过使用MongoDB来创建新的应用，提高与客户之间的工作效率，加快产品上市时间，以及降低企业成本。
+
+MongoDB是专为可扩展性，高性能和高可用性而设计的数据库。它可以从单服务器部署扩展到大型、复杂的多数据中心架构。利用内存计算的优势，MongoDB能够提供高性能的数据读写操作。 MongoDB的本地复制和自动故障转移功能使您的应用程序具有企业级的可靠性和操作灵活性
+MongoDB特点
+MongoDB 是一个面向文档存储的数据库，操作起来比较简单和容易。
+你可以通过本地或者网络创建数据镜像，这使得MongoDB有更强的扩展性。
+Mongo支持丰富的查询表达式。查询指令使用JSON形式的标 ...</div></div></div><div class="recent-post-item"><div class="post_cover right_radius"><a href="/2020/06/04/Blog/jieba/" title="Python中文分词 jieba">     <img class="post_bg" data-src="/img/timg.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="Python中文分词 jieba"></a></div><div class="recent-post-info"><a class="article-title" href="/2020/06/04/Blog/jieba/" title="Python中文分词 jieba">Python中文分词 jieba</a><div class="article-meta-wrap"><time class="post-meta__date"><span class="post-meta__date-created" title="发表于 2020-06-04 13:59:18"><i class="far fa-calendar-alt"></i>2020-06-04</span><span class="article-meta__separator">|</span><span class="post-meta__date-updated" title="更新于 2020-06-09 15:44:24"><i class="fas fa-history"></i>2020-06-09</span></time><span class="article-meta"><span class="article-meta__separator">|</span><i class="fas fa-inbox article-meta__icon"></i><a class="article-meta__categories" href="/categories/%E7%BC%96%E7%A8%8B-%C2%B7-%E6%8A%80%E6%9C%AF/">编程 · 技术</a></span></div><div class="content">序幕Python有个模块可以将一段话中的关键词提取出来，支持中文简体，繁体分词，还支持自定义词库。 –它就是Python中文分词组件jieba
+jieba 支持三种分词模式：精确模式、全模式和搜索引擎模式，下面是三种模式的特点。
+精确模式：试图将语句最精确的切分，不存在冗余数据，适合做文本分析
+全模式：将语句中所有可能是词的词语都切分出来，速度很快，但是存在冗余数据
+搜索引擎模式：在精确模式的基础上，对长词再次进行切分
+jieba
+安装因为 jieba 是一个第三方库，所有需要我们在本地进行安装。
+Windows 下使用命令安装：在联网状态下，在命令行下输入 pip install jieba 进行安装，安装完成后会提示安装成功
+在 pyCharm 中安装：打开 settings，搜索 Project Interpreter，在右边的窗口选择 + 号，点击后在搜索框搜索 jieba，点击安装即可
+
+三种模式使用123456import jiebaseg_str = '好好学习，天天向上。'print("/".join(jieba.lcut(seg_str)))    # 精简模式，返回 ...</div></div></div><div class="recent-post-item"><div class="post_cover left_radius"><a href="/2020/06/03/Blog/Django2.0.4%E4%B8%8EVue%E9%80%92%E5%BD%92%E7%BB%84%E4%BB%B6%E5%AE%9E%E7%8E%B0%E6%97%A0%E9%99%90%E6%9E%81%E5%88%86%E7%B1%BB/" title="Django2.0.4与Vue递归组件实现无限极分类">     <img class="post_bg" data-src="/img/timg.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="Django2.0.4与Vue递归组件实现无限极分类"></a></div><div class="recent-post-info"><a class="article-title" href="/2020/06/03/Blog/Django2.0.4%E4%B8%8EVue%E9%80%92%E5%BD%92%E7%BB%84%E4%BB%B6%E5%AE%9E%E7%8E%B0%E6%97%A0%E9%99%90%E6%9E%81%E5%88%86%E7%B1%BB/" title="Django2.0.4与Vue递归组件实现无限极分类">Django2.0.4与Vue递归组件实现无限极分类</a><div class="article-meta-wrap"><time class="post-meta__date"><span class="post-meta__date-created" title="发表于 2020-06-03 15:54:10"><i class="far fa-calendar-alt"></i>2020-06-03</span><span class="article-meta__separator">|</span><span class="post-meta__date-updated" title="更新于 2020-06-09 15:45:03"><i class="fas fa-history"></i>2020-06-09</span></time><span class="article-meta"><span class="article-meta__separator">|</span><i class="fas fa-inbox article-meta__icon"></i><a class="article-meta__categories" href="/categories/%E7%BC%96%E7%A8%8B-%C2%B7-%E6%8A%80%E6%9C%AF/">编程 · 技术</a></span></div><div class="content">序幕什么是无限极分类，按照我的理解，就是对数据完成多次分类，如同一棵树一样，从根开始，到主干、枝干、叶子……
+家谱树
+家谱树是无限极分类的表现形式之一。家谱，现在很多地方都流行起修家谱，那怎么修家谱，按照我理解，就是给自己找一个祖宗，一代代找上去，形成了一个体系，这样编篡而成的叫家谱。家谱树就与之类似，从某个节点开始向上寻找其父节点，再找父节点的父节点，直到找不到为止。按照这种寻找，形成的一个类似树状的结构，就叫做家谱树。
+完成无限极分类，主要运用了两种方法，一是递归方式，二是迭代方式。而主要运用无限极分类的地方有商品无限极分类，无限极评论等等。
+某博主的无限极评论
+
+京东的商品无限极分类
+
+接下来我们先来测试一个层级效果
+创建一个测试文件test.py
+123456789101112131415161718#自定义一个列表，已设置好层级关系mylist = [&#123;'id': 1, 'name': '在线课程', 'pid': 0, 'child': [&#123;'id': 2, 'name': 'Python', 'pid': 1&#125;]&#125;, &#123;' ...</div></div></div><div class="recent-post-item"><div class="post_cover right_radius"><a href="/2020/06/03/Blog/%E9%80%92%E5%BD%92%E8%AF%A6%E8%A7%A3/" title="递归详解">     <img class="post_bg" data-src="/img/timg.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="递归详解"></a></div><div class="recent-post-info"><a class="article-title" href="/2020/06/03/Blog/%E9%80%92%E5%BD%92%E8%AF%A6%E8%A7%A3/" title="递归详解">递归详解</a><div class="article-meta-wrap"><time class="post-meta__date"><span class="post-meta__date-created" title="发表于 2020-06-03 13:54:10"><i class="far fa-calendar-alt"></i>2020-06-03</span><span class="article-meta__separator">|</span><span class="post-meta__date-updated" title="更新于 2020-06-09 15:46:01"><i class="fas fa-history"></i>2020-06-09</span></time><span class="article-meta"><span class="article-meta__separator">|</span><i class="fas fa-inbox article-meta__icon"></i><a class="article-meta__categories" href="/categories/%E7%BC%96%E7%A8%8B-%C2%B7-%E6%8A%80%E6%9C%AF/">编程 · 技术</a></span></div><div class="content">序幕什么是递归递归，就是在运行的过程中调用自己。例如，当两面镜子相互之间近似平行时，镜中嵌套的图像是以无限递归的形式出现的。也可以理解为自我复制的过程。
+语言例子：
+
+从前有座山，山里有座庙，庙里有个老和尚，正在给小和尚讲故事呢！故事是什么呢？“从前有座山，山里有座庙，庙里有个老和尚，正在给小和尚讲故事呢！故事是什么呢？‘从前有座山，山里有座庙，庙里有个老和尚，正在给小和尚讲故事呢！故事是什么呢？……’”
+
+
+一只狗来到厨房，偷走一小块面包。厨子举起杓子，把那只狗打死了。于是所有的狗都跑来了，给那只狗掘了一个坟墓，还在墓碑上刻了墓志铭，让未来的狗可以看到：“一只狗来到厨房，偷走一小块面包。厨子举起杓子，把那只狗打死了。于是所有的狗都跑来了，给那只狗掘了一个坟墓，还在墓碑上刻了墓志铭，让未来的狗可以看到：‘一只狗来到厨房，偷走一小块面包。厨子举起杓子，把那只狗打死了。于是所有的狗都跑来了，给那只狗掘了一个坟墓，还在墓碑上刻了墓志铭，让未来的狗可以看到……’”
+
+大雄在房里，用时光电视看着从前的情况。电视画面中的那个时候，他正在房里，用时光电视，看着从前的情况。电视画面中的电视画面的那个时 ...</div></div></div><div class="recent-post-item"><div class="post_cover left_radius"><a href="/2020/06/02/Blog/gitee%E4%B8%89%E6%96%B9%E7%99%BB%E9%99%86/" title="Django2.0.4与Vue联合实现Gitee(码云)三方登陆，以及什么是OAuth2.0认证和授权机制基本流程">     <img class="post_bg" data-src="/img/timg.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="Django2.0.4与Vue联合实现Gitee(码云)三方登陆，以及什么是OAuth2.0认证和授权机制基本流程"></a></div><div class="recent-post-info"><a class="article-title" href="/2020/06/02/Blog/gitee%E4%B8%89%E6%96%B9%E7%99%BB%E9%99%86/" title="Django2.0.4与Vue联合实现Gitee(码云)三方登陆，以及什么是OAuth2.0认证和授权机制基本流程">Django2.0.4与Vue联合实现Gitee(码云)三方登陆，以及什么是OAuth2.0认证和授权机制基本流程</a><div class="article-meta-wrap"><time class="post-meta__date"><span class="post-meta__date-created" title="发表于 2020-06-02 20:46:18"><i class="far fa-calendar-alt"></i>2020-06-02</span><span class="article-meta__separator">|</span><span class="post-meta__date-updated" title="更新于 2020-06-09 15:44:07"><i class="fas fa-history"></i>2020-06-09</span></time><span class="article-meta"><span class="article-meta__separator">|</span><i class="fas fa-inbox article-meta__icon"></i><a class="article-meta__categories" href="/categories/%E7%BC%96%E7%A8%8B-%C2%B7-%E6%8A%80%E6%9C%AF/">编程 · 技术</a></span></div><div class="content">序幕码云(Gitee),一款强大的代码托管、质量检测、代码演示、团队协作等开发工具集成到云平台，为了构建更好的码云生态环境，推出了基于OAuth2的API V5版本。
+码云三方登陆应用创建
+首先，我们注册码云
+
+创建完成之后点击个人头像，找到设置
+
+
+   
+
+在设置里找到第三方应用
+
+   
+
+点击创建应用
+
+   
+
+应用名称，应用描述，应用主页，回调地址根据自己定义修改
+
+   
+
+创建完毕之后，会给你APPID与APPkey，这两样要记住
+
+   
+
+之后的路程可以参照Gitee开发文档
+
+代码实现
+Vue
+12345678函数名()&#123;        var appid &#x3D; &#39;APPID&#39;        var redirect_uri &#x3D; &#39;码云回调地址&#39;        &#x2F;&#x2F; 构造url        var url &#x3D; &#39;https:&#x2F;&#x2F;gitee.com&#x2F;oauth&#x2F;authorize?client_id&#x3D;&#39;+app ...</div></div></div><div class="recent-post-item"><div class="post_cover right_radius"><a href="/2020/06/02/Blog/%E9%92%89%E9%92%89%E4%B8%89%E6%96%B9%E7%99%BB%E9%99%86/" title="Django2.0.4与Vue联合实现钉钉三方扫码登陆">     <img class="post_bg" data-src="/img/timg.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="Django2.0.4与Vue联合实现钉钉三方扫码登陆"></a></div><div class="recent-post-info"><a class="article-title" href="/2020/06/02/Blog/%E9%92%89%E9%92%89%E4%B8%89%E6%96%B9%E7%99%BB%E9%99%86/" title="Django2.0.4与Vue联合实现钉钉三方扫码登陆">Django2.0.4与Vue联合实现钉钉三方扫码登陆</a><div class="article-meta-wrap"><time class="post-meta__date"><span class="post-meta__date-created" title="发表于 2020-06-02 13:54:10"><i class="far fa-calendar-alt"></i>2020-06-02</span><span class="article-meta__separator">|</span><span class="post-meta__date-updated" title="更新于 2020-06-09 15:46:20"><i class="fas fa-history"></i>2020-06-09</span></time><span class="article-meta"><span class="article-meta__separator">|</span><i class="fas fa-inbox article-meta__icon"></i><a class="article-meta__categories" href="/categories/%E7%BC%96%E7%A8%8B-%C2%B7-%E6%8A%80%E6%9C%AF/">编程 · 技术</a></span></div><div class="content">序幕钉钉，学生党的噩梦，是阿里巴巴集团专为中国企业打造的免费沟通和协同的多端平台，帮助中国企业通过系统化的解决方案，全方位提升中国企业沟通和协同效率
+创建应用
+首先注册钉钉开发者平台，成功之后登陆
+
+
+登陆成功，进入应用开发
+
+   
+
+找到移动接入应用，进入登陆
+
+   
+
+创建扫码登录应用授权
+
+   
+
+LOGO地址就是你钉钉三方登陆的图片地址。回调域名可以自己设置
+
+   
+
+创建成功之后，会给你专属APPID,APPKEY
+
+   
+代码接入
+Vue
+12345678函数名()&#123;        var appid &#x3D; &#39;APPID&#39;    	var redirect_uri &#x3D; &#39;钉钉回调地址&#39;    	&#x2F;&#x2F; 构成url		var url &#x3D; &#39;https:&#x2F;&#x2F;oapi.dingtalk.com&#x2F;connect&#x2F;qrconnect?appid&#x3D;&#39;+appid+&#39;&amp;response_type&#x3D;co ...</div></div></div><div class="recent-post-item"><div class="post_cover left_radius"><a href="/2020/06/02/Blog/%E6%96%B0%E6%B5%AA%E5%BE%AE%E5%8D%9A%E4%B8%89%E6%96%B9%E7%99%BB%E9%99%86/" title="Django2.0.4与Vue联合实现新浪微博三方登陆">     <img class="post_bg" data-src="/img/timg.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="Django2.0.4与Vue联合实现新浪微博三方登陆"></a></div><div class="recent-post-info"><a class="article-title" href="/2020/06/02/Blog/%E6%96%B0%E6%B5%AA%E5%BE%AE%E5%8D%9A%E4%B8%89%E6%96%B9%E7%99%BB%E9%99%86/" title="Django2.0.4与Vue联合实现新浪微博三方登陆">Django2.0.4与Vue联合实现新浪微博三方登陆</a><div class="article-meta-wrap"><time class="post-meta__date"><span class="post-meta__date-created" title="发表于 2020-06-02 13:02:18"><i class="far fa-calendar-alt"></i>2020-06-02</span><span class="article-meta__separator">|</span><span class="post-meta__date-updated" title="更新于 2020-06-13 21:00:50"><i class="fas fa-history"></i>2020-06-13</span></time><span class="article-meta"><span class="article-meta__separator">|</span><i class="fas fa-inbox article-meta__icon"></i><a class="article-meta__categories" href="/categories/%E7%BC%96%E7%A8%8B-%C2%B7-%E6%8A%80%E6%9C%AF/">编程 · 技术</a></span></div><div class="content">序幕微博，又名微型博客，指的是一种基于用户关系信息分享、传播以及通过关注机制分享简短实时信息的广播式的社交媒体、网络平台。与国外Twitter、Facebook相似，在我国被广大年轻人喜爱。
+新浪微博三方登陆创建应用
+首先注册、登陆微博开放平台
+
+登陆之后，在微连接找到网站接入
+
+
+进入，点击立即接入
+
+
+设置自己的应用名称，将应用分类设置成网页应用，点击创建
+
+
+下面这些我们不需要管，记住自己的APPID与APPKey，之后点击高级设置
+
+
+设置授权回调地址和取消授权回调地址，可以自由更改
+
+
+由于新浪微博规定如果不通过审核，那么新浪有些接口无权限请求的，可以说你手里只有access_token和uid，却换不到别的东西。所有我们要设置其他东西，点击测试信息,将个人的账号添加到测试里，就可以请求相应的接口。
+
+
+
+代码接入
+Vue
+1234567函数名:()&#123;		&#x2F;&#x2F; 组装url		let url &#x3D; &quot;https:&#x2F;&#x2F;api.weibo.com&#x2F;oauth2&#x2F;authorize?client_ ...</div></div></div><div class="recent-post-item"><div class="post_cover right_radius"><a href="/2020/06/01/Note/celery_error/" title="Celery_Error">     <img class="post_bg" data-src="/img/notepic.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="Celery_Error"></a></div><div class="recent-post-info"><a class="article-title" href="/2020/06/01/Note/celery_error/" title="Celery_Error">Celery_Error</a><div class="article-meta-wrap"><time class="post-meta__date"><span class="post-meta__date-created" title="发表于 2020-06-01 08:00:00"><i class="far fa-calendar-alt"></i>2020-06-01</span><span class="article-meta__separator">|</span><span class="post-meta__date-updated" title="更新于 2020-06-01 10:57:57"><i class="fas fa-history"></i>2020-06-01</span></time><span class="article-meta"><span class="article-meta__separator">|</span><i class="fas fa-inbox article-meta__icon"></i><a class="article-meta__categories" href="/categories/%E6%80%BB%E7%BB%93-%C2%B7-%E7%AC%94%E8%AE%B0/">总结 · 笔记</a></span></div><div class="content">一、错误前几天给Django配置了Celery,使用
+1celery worker -A celery_task -l info -P eventlet
+启动Celery,没有使用POST方法测试
+今天测试使用了下POST，当我启动服务访问时：
+
+1TypeError: wrap_socket() got an unexpected keyword argument '_context'
+
+出现了错误
+二、解决requests包的requests.post发送后，传不回数据
+所以，在改变服务器启动方法不要用eventlet，加个参数
+1celery worker -A celery_task -l info -P=solo</div></div></div><nav id="pagination"><div class="pagination"><a class="extend prev" rel="prev" href="/page/2/"><i class="fas fa-chevron-left fa-fw"></i></a><a class="page-number" href="/">1</a><a class="page-number" href="/page/2/">2</a><span class="page-number current">3</span><a class="page-number" href="/page/4/">4</a><span class="space">&hellip;</span><a class="page-number" href="/page/8/">8</a><a class="extend next" rel="next" href="/page/4/"><i class="fas fa-chevron-right fa-fw"></i></a></div></nav></div><div class="aside_content" id="aside_content"><div class="card-widget card-info"><div class="card-content"><div class="card-info-avatar is-center"><img class="avatar-img" src="/img/avatar.png" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="avatar"/><div class="author-info__name">汪小白</div><div class="author-info__description"></div></div><div class="card-info-data"><div class="card-info-data-item is-center"><a href="/archives"><div class="headline">文章</div><div class="length_num">75</div></a></div><div class="card-info-data-item is-center">      <a href="/tags"><div class="headline">标签</div><div class="length_num">20</div></a></div><div class="card-info-data-item is-center">     <a href="/categories"><div class="headline">分类</div><div class="length_num">4</div></a></div></div><div class="card-info-bookmark is-center"><button class="button--animated" id="bookmark-it" title="加入书签"><i class="fas fa-bookmark"></i><span>加入书签</span></button></div><div class="card-info-social-icons is-center"><a class="social-icon" href="https://github.com/wxs0088" target="_blank" title="Github"><i class="fab fa-github"></i></a><a class="social-icon" href="mailto:13934880929@outlook.com" target="_blank" title="Email"><i class="fa fa-envelope"></i></a><a class="social-icon" href="/atom.xml" target="_blank" title="RSS"><i class="fa fa-rss"></i></a></div></div></div><div class="card-widget card-announcement"><div class="card-content"><div class="item-headline"><i class="fas fa-bullhorn card-announcement-animation"></i><span>公告</span></div><div class="announcement_content">The greatest test of courage on earth is to bear defeat without losing heart.</div></div></div><div class="card-widget card-recent-post"><div class="card-content"><div class="item-headline"><i class="fas fa-history"></i><span>最新文章</span></div><div class="aside-recent-item"><div class="aside-recent-post"><a href="/2020/07/22/Note/nginx%E8%B4%9F%E8%BD%BD%E5%9D%87%E8%A1%A1/"><div class="aside-post-cover"><img class="aside-post-bg" data-src="/img/notepic.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" title="在阿里云Centos上配置Nginx+uwsgi+负载均衡配置" alt="在阿里云Centos上配置Nginx+uwsgi+负载均衡配置"/></div><div class="aside-post-title"><div class="aside-post_title" href="/2020/07/22/Note/nginx%E8%B4%9F%E8%BD%BD%E5%9D%87%E8%A1%A1/" title="在阿里云Centos上配置Nginx+uwsgi+负载均衡配置">在阿里云Centos上配置Nginx+uwsgi+负载均衡配置</div><time class="aside-post_meta post-meta__date" title="发表于 2020-07-22 08:00:00">2020-07-22</time></div></a></div><div class="aside-recent-post"><a href="/2020/07/21/Blog/aliyun%E9%83%A8%E7%BD%B2flask/"><div class="aside-post-cover"><img class="aside-post-bg" data-src="/img/timg.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" title="利用DockerHub在Centos7.6环境下部署Nginx反向代理Gunicorn+Flask独立架构" alt="利用DockerHub在Centos7.6环境下部署Nginx反向代理Gunicorn+Flask独立架构"/></div><div class="aside-post-title"><div class="aside-post_title" href="/2020/07/21/Blog/aliyun%E9%83%A8%E7%BD%B2flask/" title="利用DockerHub在Centos7.6环境下部署Nginx反向代理Gunicorn+Flask独立架构">利用DockerHub在Centos7.6环境下部署Nginx反向代理Gunicorn+Flask独立架构</div><time class="aside-post_meta post-meta__date" title="发表于 2020-07-21 08:00:00">2020-07-21</time></div></a></div><div class="aside-recent-post"><a href="/2020/07/20/Blog/docker%E4%BD%BF%E7%94%A8/"><div class="aside-post-cover"><img class="aside-post-bg" data-src="/img/timg.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" title="在Win10系统下利用Docker部署Gunicorn+Flask打造独立镜像" alt="在Win10系统下利用Docker部署Gunicorn+Flask打造独立镜像"/></div><div class="aside-post-title"><div class="aside-post_title" href="/2020/07/20/Blog/docker%E4%BD%BF%E7%94%A8/" title="在Win10系统下利用Docker部署Gunicorn+Flask打造独立镜像">在Win10系统下利用Docker部署Gunicorn+Flask打造独立镜像</div><time class="aside-post_meta post-meta__date" title="发表于 2020-07-20 08:00:00">2020-07-20</time></div></a></div><div class="aside-recent-post"><a href="/2020/07/16/Blog/docker%E5%AE%89%E8%A3%85/"><div class="aside-post-cover"><img class="aside-post-bg" data-src="/img/timg.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" title="Windows下安装docker" alt="Windows下安装docker"/></div><div class="aside-post-title"><div class="aside-post_title" href="/2020/07/16/Blog/docker%E5%AE%89%E8%A3%85/" title="Windows下安装docker">Windows下安装docker</div><time class="aside-post_meta post-meta__date" title="发表于 2020-07-16 08:00:00">2020-07-16</time></div></a></div><div class="aside-recent-post"><a href="/2020/07/15/Note/Gitbash/"><div class="aside-post-cover"><img class="aside-post-bg" data-src="/img/notepic.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" title="使用Git Bash实现Git代码上传加密" alt="使用Git Bash实现Git代码上传加密"/></div><div class="aside-post-title"><div class="aside-post_title" href="/2020/07/15/Note/Gitbash/" title="使用Git Bash实现Git代码上传加密">使用Git Bash实现Git代码上传加密</div><time class="aside-post_meta post-meta__date" title="发表于 2020-07-15 16:59:18">2020-07-15</time></div></a></div></div></div></div><div class="card-widget card-categories"><div class="card-content"><div class="item-headline"><i class="fas fa-folder-open"></i><span>分类</span></div><ul class="card-category-list">
+            <li class="card-category-list-item "><a class="card-category-list-link" href="/categories/%E6%80%BB%E7%BB%93-%C2%B7-%E7%AC%94%E8%AE%B0/"><span class="card-category-list-name">总结 · 笔记</span><span class="card-category-list-count">33</span></a></li><li class="card-category-list-item "><a class="card-category-list-link" href="/categories/%E6%96%B0%E5%89%A7-%C2%B7-%E7%94%B5%E5%BD%B1/"><span class="card-category-list-name">新剧 · 电影</span><span class="card-category-list-count">7</span></a></li><li class="card-category-list-item "><a class="card-category-list-link" href="/categories/%E7%94%9F%E6%B4%BB-%C2%B7-%E6%97%A5%E8%AE%B0/"><span class="card-category-list-name">生活 · 日记</span><span class="card-category-list-count">2</span></a></li><li class="card-category-list-item "><a class="card-category-list-link" href="/categories/%E7%BC%96%E7%A8%8B-%C2%B7-%E6%8A%80%E6%9C%AF/"><span class="card-category-list-name">编程 · 技术</span><span class="card-category-list-count">33</span></a></li>
+                       
+            </ul></div></div><div class="card-widget card-tags"><div class="card-content"><div class="item-headline"><i class="fas fa-tags"></i><span>标签</span></div><div class="card-tag-cloud"><a href='/tags/Celery/' style='font-size:16px; color:rgb(77, 114, 175)'>Celery</a><a href='/tags/Centos/' style='font-size:18px; color:rgb(35, 43, 156)'>Centos</a><a href='/tags/Django/' style='font-size:18px; color:rgb(120, 117, 165)'>Django</a><a href='/tags/Docker/' style='font-size:18px; color:rgb(37, 51, 147)'>Docker</a><a href='/tags/Flask/' style='font-size:18px; color:rgb(61, 154, 60)'>Flask</a><a href='/tags/Git/' style='font-size:17px; color:rgb(57, 177, 11)'>Git</a><a href='/tags/Go/' style='font-size:21px; color:rgb(172, 120, 125)'>Go</a><a href='/tags/HEY-UI/' style='font-size:18px; color:rgb(54, 188, 184)'>HEY UI</a><a href='/tags/Hugo/' style='font-size:18px; color:rgb(191, 20, 74)'>Hugo</a><a href='/tags/JWT/' style='font-size:19px; color:rgb(69, 18, 172)'>JWT</a><a href='/tags/MongoDB/' style='font-size:18px; color:rgb(68, 67, 152)'>MongoDB</a><a href='/tags/Navicat/' style='font-size:16px; color:rgb(136, 40, 111)'>Navicat</a><a href='/tags/Nginx/' style='font-size:20px; color:rgb(97, 35, 84)'>Nginx</a><a href='/tags/Python/' style='font-size:19px; color:rgb(176, 140, 32)'>Python</a><a href='/tags/Redis/' style='font-size:18px; color:rgb(153, 11, 9)'>Redis</a><a href='/tags/Scrapy/' style='font-size:19px; color:rgb(138, 70, 177)'>Scrapy</a><a href='/tags/ShareLatex/' style='font-size:19px; color:rgb(148, 23, 4)'>ShareLatex</a><a href='/tags/VSCode/' style='font-size:20px; color:rgb(28, 55, 5)'>VSCode</a><a href='/tags/Vim/' style='font-size:16px; color:rgb(196, 142, 99)'>Vim</a><a href='/tags/Vue/' style='font-size:21px; color:rgb(164, 12, 186)'>Vue</a></div></div></div><div class="card-widget card-archives"><div class="card-content"><div class="item-headline"><i class="fas fa-archive"></i><span>归档</span></div><ul class="card-archive-list"><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2020/07/"><span class="card-archive-list-date">七月 2020</span><span class="card-archive-list-count">10</span></a></li><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2020/06/"><span class="card-archive-list-date">六月 2020</span><span class="card-archive-list-count">20</span></a></li><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2020/05/"><span class="card-archive-list-date">五月 2020</span><span class="card-archive-list-count">27</span></a></li><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2020/04/"><span class="card-archive-list-date">四月 2020</span><span class="card-archive-list-count">18</span></a></li></ul></div></div><div class="card-widget card-webinfo"><div class="card-content"><div class="item-headline"><i class="fas fa-chart-line"></i><span>网站资讯</span></div><div class="webinfo"><div class="webinfo-item"><div class="webinfo-article-name">文章数目 :</div><div class="webinfo-article-count">75</div></div><div class="webinfo-item"><div class="webinfo-runtime-name">已运行时间 :</div><div class="webinfo-runtime-count" id="webinfo-runtime-count" publish_date="4/6/2020 00:00:00">     </div></div><div class="webinfo-item"><div class="webinfo-site-wordcount-name">本站总字数 :</div><div class="webinfo-site-wordcount">85.9k</div></div><div class="webinfo-item">      <div class="webinfo-site-uv-name">本站访客数 :</div><div class="webinfo-site-uv-count" id="busuanzi_value_site_uv"></div></div><div class="webinfo-item"><div class="webinfo-site-name">本站总访问量 :</div><div class="webinfo-site-pv-count" id="busuanzi_value_site_pv"></div></div></div></div></div></div></main><footer id="footer" data-type="color"><div id="footer-wrap"><div class="copyright">&copy;2019 - 2021  <i id="heartbeat" class="fa fas fa-heartbeat"></i> 汪小白</div></div><head>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/HCLonely/images@master/others/heartbeat.min.css">
+<meta name="generator" content="Hexo 4.2.1"><link rel="alternate" href="/atom.xml" title="汪小白" type="application/atom+xml">
+</head></footer></div><section class="rightside" id="rightside"><div id="rightside-config-hide"><button class="translate_chn_to_cht" id="translateLink" title="简繁转换">繁</button><button id="darkmode" title="浅色和深色模式转换"><i class="fas fa-adjust"></i></button></div><div id="rightside-config-show"><button id="rightside_config" title="设置"><i class="fas fa-cog"></i></button><button id="go-up" title="回到顶部"><i class="fas fa-arrow-up"></i></button></div></section><div class="search-dialog" id="local-search"><div class="search-dialog__title" id="local-search-title">本地搜索</div><div id="local-input-panel"><div id="local-search-input"><div class="local-search-box"><input class="local-search-box--input" placeholder="搜索文章" type="text"/></div></div></div><hr/><div id="local-search-results"><div id="local-hits"></div><div id="local-stats"><div class="local-search-stats__hr" id="hr"><span>由</span> <a href="https://github.com/wzpan/hexo-generator-search" target="_blank" rel="noopener" style="color:#49B1F5;">hexo-generator-search</a>
+ <span>提供支持</span></div></div></div><span class="search-close-button"><i class="fas fa-times"></i></span></div><div class="search-mask"></div><script src="https://cdn.jsdelivr.net/npm/jquery@latest/dist/jquery.min.js"></script><script src="/js/utils.js"></script><script src="/js/main.js"></script><script src="/js/tw_cn.js"></script><script src="https://cdn.jsdelivr.net/npm/medium-zoom/dist/medium-zoom.min.js"></script><script src="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@latest/dist/jquery.fancybox.min.js"></script><script id="ribbon_piao" mobile="false" src="/js/third-party/piao.js"></script><script src="/js/third-party/activate-power-mode.js"></script><script>POWERMODE.colorful = false;
+POWERMODE.shake = true;
+document.body.addEventListener('input', POWERMODE);
+</script><script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script><script src="https://cdn.jsdelivr.net/npm/instant.page/instantpage.min.js" type="module" defer></script><script src="https://cdn.jsdelivr.net/npm/vanilla-lazyload/dist/lazyload.iife.min.js" async></script><script src="/js/third-party/click_heart.js"></script><script src="/js/third-party/ClickShowText.js"></script><script src="/js/search/local-search.js"></script><script src="https://cdn.jsdelivr.net/npm/typed.js"></script><script>var subtitleEffect = true
+if (subtitleEffect) { 
+  var typed = new Typed("#subtitle", {
+    strings: "远赴人间惊鸿宴 &#44; 一睹人间盛世颜。".split(","),
+    startDelay: 300,
+    typeSpeed: 150,
+    loop: false,
+    backSpeed: 50
+  })
+} else {
+  document.getElementById("subtitle").innerHTML = '远赴人间惊鸿宴 &#44; 一睹人间盛世颜。'
+}</script></body></html>
