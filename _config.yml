@@ -13,8 +13,8 @@ timezone: ''
 
 # URL
 ## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
-url:  http://www.sirxs.cn/
-root: /
+url:  https://github.com/xiaohandou
+root: /xiaohandou/
 permalink: :year/:month/:day/:title/
 permalink_defaults:
 pretty_urls:
@@ -99,8 +99,8 @@ theme: Butterfly
 ## Docs: https://hexo.io/docs/deployment.html
 deploy:
   type: git
-  repository: git@github.com:xiaohandou/smart-aline.git
-  branch: master
+  repository: https://github.com/xiaohandou/smart-alien
+  branch: main
 
 # 搜索
 search:
